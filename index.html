@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de personagens</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1>Gerador de <br>Personagem</h1>    
+    </header>
+    
+    <div class="main">
+        <div class="flip-card">
+            <div class="flip-card-inner ">
+
+                <div class="flip-card-front inputs">
+                    <form id="user-form">
+                        <input type="text" name="name" id="text" placeholder="Insira seu nome">
+                        <div class="classes">
+                            Escolha sua classe
+                            <label>
+                                Cavaleiro <input type="radio" name="class" value="knight"> 
+                            </label>
+                            <label>
+                                Rogue <input type="radio" name="class" value="rogue" >  
+                            </label>
+                            <label>
+                                Mago <input type="radio" name="class" value="mage"> 
+                            </label>
+                            <label>
+                                Arqueiro <input type="radio" name="class" value="archer">
+                            </label>
+                        </div>
+                
+                        <div class="genders">
+                            Escolha seu gênero
+                            <label>
+                                Masculino <input type="radio" name="gender" value="masc" >
+                            </label>
+                            <label>
+                                Feminino <input type="radio" name="gender" value="Femi" >
+                            </label>
+                        </div>
+                        <button type="submit" class="medieval-button">Gerar personagem</button>
+                    </form>
+                </div>
+                
+        
+                <div class="flip-card-back secao">
+                    <img src="" alt="imagem gerada" width="20px" height="20px" id="classImage">
+                    <p id="userText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, quibusdam explicabo odio mollitia molestiae, quis et pariatur aliquam dolore sequi eos eligendi vero incidunt perferendis quia! Est recusandae numquam minima.</p>
+                    <button class="medieval-button" id="tryAgain">Gerar Novamente</button>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <script src="./index.js">
+    </script>
+</body>
+</html>
